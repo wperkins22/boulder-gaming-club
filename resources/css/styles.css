@@ -1,7 +1,7 @@
 /* Universal */
 body {
   font-family: "Source Code Pro", monospace;
-  font-size: 18px;
+  font-size: 20px;
   background-color: royalblue;
   color: floralwhite;
   text-align: center;
@@ -24,19 +24,66 @@ nav a {
 /* About Section */
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 #about {
-    position: relative;
-    top: 3rem;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid goldenrod;
+  position: relative;
+  top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid goldenrod;
 }
 
 #about img {
-    border: 3px solid darkmagenta;
-    height: 7rem;
-    width: auto;
-    border-radius: 50%;
+  border: 3px solid darkmagenta;
+  height: 7rem;
+  width: auto;
+  border-radius: 50%;
+}
+
+#favorite-games {
+  position: relative;
+  top: 3rem;
+}
+
+#grid {
+  display: grid;
+  grid-template: 1fr / repeat(5, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  height: 2em;
+  width: auto;
+}
+
+.game img {
+  height: 10em;
+  width: auto;
+  border: 2px solid darkmagenta;
+}
+
+.game .modern-warfare {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.game .minecraft {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.game .far-cry {
+  grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.game .red-dead {
+    grid-area: 1 / 4 / span 1 / span 1;
+}
+
+.game .witcher {
+    grid-area: 1 / 5 / span 1 / span 1;
 }
